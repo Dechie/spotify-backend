@@ -15,8 +15,6 @@ class SongLocalController extends Controller
         return response()->json(SongLocal::all());
     }
     public function uploadSongFile(Request $request) {
-      
-
    
         $audioFile = $request->file('audio_file');
         $fileExtension = $request->input('file_extension');
